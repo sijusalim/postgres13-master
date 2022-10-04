@@ -1,7 +1,7 @@
 app:
     name: Postgres Master
     code: POSTGRES
-    notify: appz@cloudcontrol.com
+    notify: ssalim@cloudcontrol.com
     
 build:
     version: 13.X
@@ -11,7 +11,7 @@ build:
     image_template: postgres_master-13.3
     
 deploy:
-    context: alpha/DEV
+    context: sijusalim/DEV
     type: statefulset
     ingress: none
     replicas: 1
